@@ -7,6 +7,8 @@ import { TodoComponent } from './todo/todo.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TodoallComponent } from './todoall/todoall.component';
 import { Router, RouterModule, Routes } from '@angular/router';
+import {     HttpClientModule } from '@angular/common/http';
+
 
 const myroutes:Routes=[
 
@@ -24,7 +26,8 @@ const myroutes:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myroutes)
+    RouterModule.forRoot(myroutes),
+    HttpClientModule
    
   ],
   providers: [],
